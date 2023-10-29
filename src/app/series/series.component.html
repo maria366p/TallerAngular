@@ -1,0 +1,28 @@
+
+<body>
+    <h1 id="tv-series-header" style = "background-color: #007777">TV Series Ranking</h1>
+    <div class = "table-responsive" id="series-container">
+        <table class="table table-striped" id="series" style = "width: 30%;margin: 0 auto; float: left">
+            <thead class = "thead-dark" style = "background-color: #ffffff; color: #000000; font-weight: bold" >
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Seasons</th>
+                </tr>
+              </thead>
+              <tbody style = "background-color: #f5f5f5">
+                <tr *ngFor="let ser of series">
+                  <th style="font-weight: bold">{{ser.id}}</th>
+                  <td>
+                    <dd><a href={{ser.webpage}}>{{ser.name}}</a></dd>
+                  </td>
+                  <td>{{ser.channel}}</td>
+                  <td>{{ser.seasons}}</td>
+                </tr>
+              </tbody>
+        </table>
+        <p style="clear: both">Seasons Average: {{seasonsAverage}}</p>
+    </div>
+</body>
+
