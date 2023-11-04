@@ -1,9 +1,10 @@
 
 <body>
+  <link rel="stylesheet" type="text/css" href="series.component.css">
     <h1 id="tv-series-header" style = "background-color: #007777">TV Series Ranking</h1>
     <div class = "table-responsive" id="series-container">
-        <table class="table table-striped" id="series" style = "width: 30%;margin: 0 auto; float: left">
-            <thead class = "thead-dark" style = "background-color: #ffffff; color: #000000; font-weight: bold" >
+        <table class="table table-striped" id="series" >
+            <thead class = "thead-dark" >
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
@@ -11,7 +12,7 @@
                     <th scope="col">Seasons</th>
                 </tr>
               </thead>
-              <tbody style = "background-color: #f5f5f5">
+              <tbody>
                 <tr *ngFor="let ser of series">
                   <th style="font-weight: bold">{{ser.id}}</th>
                   <td>

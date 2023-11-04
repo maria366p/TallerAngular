@@ -1,2 +1,25 @@
 
 
+/* Estilos para la tabla */
+table {
+    width: 30%;
+    margin: 0 auto;
+    float: left;
+}
+
+
+#series thead th {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Estilos para el fondo del tbody */
+#series tbody tr {
+    background-color: #f5f5f5 !important;
+}
+
+/* Estilos para el fondo de las filas (celdas) */
+#series tbody tr td {
+    background-color: #f5f5f5 !important;
+}
